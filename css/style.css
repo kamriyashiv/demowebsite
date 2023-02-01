@@ -1,0 +1,167 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+:root{
+    --color:rgb(30, 105, 227);
+}
+body{
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width:80%;
+    margin:0 auto;
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*--header--css---*/
+
+.mainHeader{
+    background-color: var(--color);
+    padding: 10px 0px;
+}
+.socialBox ul,.contactBox ul,.navList ul{
+    gap: 20px;
+    list-style-type: none;
+}
+.contactBox a,.socialBox a{
+    color: #ffffff;
+}
+
+/*--navbar - Style --*/
+nav{
+    position: sticky;
+    top:0px;
+    z-index: 999!important;
+}
+.navList ul li a{
+    color: #444444;;
+}
+.mainNav{
+    padding: 20px 0px;
+    box-shadow: 0px 4px 7px 0px #8080803b;
+}
+.actionBtn a{
+    background-color: var(--color);
+    color: white;
+    padding:10px 15px;
+    border-radius: 10px;
+    transition: color 1s;
+}
+.actionBtn a:hover,.navList ul li a:hover{
+    color:rgb(205, 36, 64);
+    transition: 1s;
+}
+
+/*--hero--section---style---*/
+.heroBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 40vh;
+}
+.heroBox h1{
+    font-size: 57px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.heroBox p{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.heroBox .actionBtn a{
+    padding: 13px 61px;
+}
+
+/*--features Card---*/
+
+.cardBox{
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 1.5;
+    margin:10px;
+    transition: all 0.5s;
+    box-shadow: 0px 0px 5px 0px gray;
+    cursor: pointer;
+    transform: translateY(0);
+}
+.cardBox i{
+    font-size: 40px;
+    color:var(--color);
+}
+.cardBox:hover{
+    transform: translateY(-10px);
+    transition: 0.5s;
+
+}
+.cardBox h2,.aboutTitle  h2{
+    color:var(--color)
+}
+
+/*--About---*/
+
+.mainAbout{
+    padding: 40px 0px;
+}
+.aboutTitle h2{
+    font-size: 30px;
+}
+.aboutTitle{
+    text-align: center;
+}
+.aboutCard {
+    padding: 40px 0px;
+}
+.aboutCard{
+    display: flex;
+    justify-content: center;
+    padding: 30px 30px;
+   
+    
+}
+.aCard {
+    width:50%;
+    line-height: 1.5;
+}
+.aCard ul {
+    list-style: none;
+    padding: 20px 0px;
+}
+.aCard ul li i{
+    color:var(--color);
+}
+.aCard .actionBtn a{
+    background-color: white;
+    color:var(--color);
+    border: 2px solid var(--color);
+}
+
+/*--footer--*/
+.mainnFooter{
+    background-color: black;
+    padding: 40px 0px; 
+    color: #ffffff;   
+}
+.fBox ul li{
+  padding: 10px 0px;
+}
+.mainnFooter .row{
+    align-items: flex-start;
+}
+.fBox h2{
+    padding: 10px 0px;
+}
